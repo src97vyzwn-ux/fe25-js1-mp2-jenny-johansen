@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="./pigdicegame.png">
+    <title>PIG DICE GAME</title>
+</head>
+<body>
+    <main>
+        <img src="./pigdicegame.png" alt="pig with a partyhat and two dices & a text that says Pig Dice Game" width="150" height="150">
+        
+        <!-- START PAGE -->
+        <section id="startPage">
+            <aside>
+                <h2>INSTRUCTIONS</h2>
+                <p>PIG is a dice game with the objective of reaching 100p with as few rounds as possible!</p>
+                <p>
+                Press the "Roll Dice" button to gather points.<br>
+                Press the "Hold" button to end the round & add your current points to your total points.<br>
+                If you roll a 1 your turn will end and you'll lose all your current points for the round.<br>
+                </p>
+                <p>If you understood the rules please enter your name and then let's play!</p>
+            </aside>
+            
+            <form id="nameForm">
+                <!-- Varför fungerar inte required? Är det pga js eventlistener för submit button?-->
+                <input type="text" id="playerName" placeholder="Your Name" name="playername" required aria-label="Input for player name">
+                <input type="submit" id="playBtn" value="Play" aria-label="Play Button">
+            </form>
+        </section>
+        
+        <!-- GAME PAGE -->
+         <section id="gamePage">
+            <h2 id="welcomeMessage"></h2>
+            <p><b>Objective:</b> Reach 100 points in as few rounds as possible!</p>
+            <p>Be careful! If you roll a one, you'll lose all your current points for the round!</p>
+
+            <aside class="scoreboard">
+                <article>
+                    <p>Total Points</p>
+                    <p id="totalPoints" class="score">0</p>
+                </article>
+                
+                <article>
+                    <p>Rounds Played</p>
+                    <p id="roundsPlayed" class="score">0</p>
+                </article>
+                
+                <article>
+                    <p>Current Points</p>
+                    <p id="currentPoints" class="score">0</p>
+                </article>
+            </aside>
+
+            <div class="diceContainer"></div>
+
+            <button id="rollDice" aria-label="Roll Dice Button">Roll Dice</button>
+            <button id="holdDice" aria-label="Hold Dice Button">Hold</button>
+         </section>
+
+         <!-- WIN PAGE -->
+         <section id="winPage">
+            <h2 id="winnerMessage"></h2>
+
+            <button id="playAgain" aria-label="Play Again Button">Play Again</button> 
+         </section>
+    </main> 
+</html>

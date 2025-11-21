@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    color: rgb(255, 172, 186);
+    background-color: rgba(255, 105, 180, 0.465);
+}
+
+main {
+    border: 15px double rgb(255, 172, 186);
+    box-shadow: 0 0 60px rgba(166, 58, 76, 0.5);
+    margin: 2rem;
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+
+aside {
+    border: 5px double rgb(255, 172, 186);
+    padding: 0.5rem;
+    margin: 1rem;
+    box-shadow: inset 0 0 10px rgba(255, 172, 186, 0.5);
+    background-color: rgb(255, 255, 255);
+}
+
+input {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 172, 186);
+    background-color: rgb(255, 208, 216);
+    box-shadow: 0 0 5px rgba(255, 172, 186, 0.7);
+}
+
+input:hover {
+    background-color: rgb(255, 172, 186);
+    border-color: black;
+    color: white;
+    cursor: pointer;
+} 
+
+button {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 172, 186);
+    background-color: rgb(255, 208, 216);
+    box-shadow: 0 0 5px rgba(255, 172, 186, 0.7);
+}
+
+button:hover {
+    background-color: rgb(255, 172, 186);
+    border-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#welcomeMessage {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+.diceContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.dice {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 50px rgba(212, 90, 110, 0.5);
+    background-color: rgb(255, 210, 217);
+}
+
+.diceDot {
+    --top: 0%;
+    --left: 0%;
+
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: inset 0 0 4px rgb(255, 255, 255);
+
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    transform: translateX(calc(var(--left) * -1)) translateY(calc(var(--top) * -1));
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.score {
+    color: black;
+}
+
+.alert {
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: bold;
+    color: rgb(211, 0, 0);
+}
