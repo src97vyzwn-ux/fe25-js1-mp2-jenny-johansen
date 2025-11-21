@@ -13,7 +13,7 @@ Hämtade form istället för submit knappen och ändrade 'click' till 'submit' i
 
 ## Krav
 - [x] Spelaren ska kunna ange sitt namn.
-**Detta ska synas tydligt på sidan**
+### Detta ska synas tydligt på sidan
 - [x] Spelarens namn 
 - [x] Den totala poängen
 - [x] Omgångens poäng
