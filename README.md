@@ -13,6 +13,9 @@ Hämtade form istället för submit knappen och ändrade 'click' till 'submit' i
 
 ## Krav
 - [x] Spelaren ska kunna ange sitt namn.
+- [x] Kastar spelaren tärningen ska ett nummer från 1 till 6 genereras och poängen ska uppdateras enligt spelreglerna.
+- [x] Väljer spelaren att frysa eller om spelaren slår en etta ska poängen uppdateras enligt spelreglerna.
+- [x] När den totala poängen når 100 ska ett tydligt meddelande visas om att spelet är slut och hur många omgångar det tog.
 ### Detta ska synas tydligt på sidan
 - [x] Spelarens namn 
 - [x] Den totala poängen
@@ -21,10 +24,8 @@ Hämtade form istället för submit knappen och ändrade 'click' till 'submit' i
 - [x] Tärningens nummer
 - [x] Hur spelaren “kastar” tärningen
 - [x] Hur spelaren “fryser” poängen
-- [x] Kastar spelaren tärningen ska ett nummer från 1 till 6 genereras och poängen ska uppdateras enligt spelreglerna.
-- [x] Väljer spelaren att frysa eller om spelaren slår en etta ska poängen uppdateras enligt spelreglerna.
-- [x] När den totala poängen når 100 ska ett tydligt meddelande visas om att spelet är slut och hur många omgångar det tog.
+
 
 ### TIPS!
-Hämta inte knappen men form för att det ska fungera utan problem.
+Hämta inte knappen med form för att det ska fungera utan problem.
 För submit-knapp skall 'submit' användas vid addEventListener INTE 'click'.
