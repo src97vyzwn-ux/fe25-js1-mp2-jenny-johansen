@@ -54,7 +54,6 @@ function createDice(number) {
             dot.style.backgroundColor = 'red';
         }
     }
-
     return dice;
 }
 
@@ -63,8 +62,6 @@ function rollDice(diceBox) {
     diceRoll = Math.ceil(Math.random() * 6);
     const dice = createDice(diceRoll);
     diceBox.appendChild(dice);
-
-    console.log(diceRoll);
 }
 
 rollDice(diceBox);
@@ -96,7 +93,7 @@ holdDiceBtn.addEventListener('click', () => {
     currentPoints.innerText = '0';
     roundsPlayed.innerText = parseInt(roundsPlayed.innerText) + 1;
 
-    if (parseInt(totalPoints.innerText) >= 10) {
+    if (parseInt(totalPoints.innerText) >= 100) {
         gamePage.classList.add('hidden');
         winPage.classList.remove('hidden');
 
